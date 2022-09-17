@@ -1,0 +1,61 @@
+@import '../abstract/variables';
+
+.footer 
+{
+    background-color: $color_strong_cyan_transparent;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transition: 0.5s;
+    height: 3rem;
+
+    font-family: $font_space_mono;
+    text-align: center;
+
+    &__title
+    { 
+        color: $color_very_dark_cyan;
+        transition: 0.25s;
+        margin-top: 0.75rem;
+    }
+
+    &__details
+    {
+        color: $color_very_light_grayish_cyan;
+        display: none;
+        font-size: 12px; 
+        text-align: center;
+        padding: 2em;
+        transition: 0.25s;
+    }
+
+    &__anchor 
+    { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+    &:hover > &__title
+    {
+        color: $color_very_light_grayish_cyan;
+    }
+
+    &:hover > &__details
+    {
+        display: inline;
+    }
+
+    &:hover 
+    {
+        background-color: $color_strong_cyan;    
+        height: 5.5em;
+    }
+}
+
+@media (max-width: 750px) 
+{
+    .footer
+    {
+        display: none;
+    }
+}

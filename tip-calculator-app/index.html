@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./scss/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./scss/main.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <main class="main-window">
+    <section aria-label="Input fields" class="left-container">
+      <form class="left-container__bill">
+        <div class="left-container__flex-div">
+          <p class="left-container__text">Bill</p>
+          <p class="left-container__text left-container__text--warning hidden">Can't be zero</p>
+        </div>
+        
+        <input aria-label="How much is the bill" class="left-container__input left-container__input--bill" type="number">
+      </form>
+
+      <form class="left-container__select-tip">
+        <p class="left-container__text">Select %</p>
+
+        <div class="left-container__flex-div left-container__flex-div--buttons">
+          <button aria-label="5%" class="left-container__percent-btn" type="button">5%</button>
+          <button aria-label="10%" class="left-container__percent-btn" type="button">10%</button>
+          <button aria-label="15%" class="left-container__percent-btn" type="button">15%</button>
+        </div>
+        <div class="left-container__flex-div left-container__flex-div--buttons">
+          <button aria-label="20%" class="left-container__percent-btn" type="button">20%</button>
+          <button aria-label="50%" class="left-container__percent-btn" type="button">50%</button>
+          <button 
+            aria-label="Custom percentage"
+            class="left-container__percent-btn custom-tip-button" 
+            contenteditable="true"  
+            type="button">Custom</button>
+        </div>
+      </form>
+
+      <form class="left-container__number-of-people">
+        <div class="left-container__flex-div">
+          <p class="left-container__text">Number of People</p>
+          <p class="left-container__text left-container__text--warning hidden">Can't be zero</p>
+        </div>
+        
+        <input aria-label="How many people" class="left-container__input left-container__input--num-ppl" type="number">
+      </form>
+    </section>
+
+    <section aria-label="Results" class="right-container">
+      <div class="right-container__flex-div">
+        <div class="right-container__results">
+          <p class="right-container__result-description">Tip Amount</p>
+          <p class="right-container__result-per-amount">/ person</p>
+        </div>
+        <p class="right-container__money-value person-tip">$0.00</p>
+      </div>
+
+      <div class="right-container__flex-div">
+        <div class="right-container__results">
+          <p class="right-container__result-description">Total</p>
+          <p class="right-container__result-per-amount">/ person</p>
+        </div>
+        <p class="right-container__money-value person-total">$0.00</p>
+      </div>
+
+      <button aria-label="Reset fields" class="right-container__reset-button right-container__reset-button--unavaliable">Reset</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__title">Tip Calculator App</p>
+    <p class="footer__details">
+      Challenge by <a class="footer__anchor" href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a class="footer__anchor" href="https://github.com/pvmdragonic">João Pedro Droval</a>.
+    </p>
+  </footer>
+
+  <script src="./scripts/calculator.js"></script>
+</body>
+</html>

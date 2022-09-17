@@ -1,0 +1,139 @@
+.right-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 50%;
+
+    background-color: $color_very_dark_cyan;
+    border-radius: 10px;
+
+    &__flex-div
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        height: 20%;
+    }
+
+    &__results
+    {
+        padding: 1rem;
+        padding-left: 3rem;
+    }
+
+    &__result-description
+    {
+        color: $color_white;
+        font-family: $font_space_mono;
+        font-weight: bold;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    &__result-per-amount
+    {
+        color: $color_dark_grayish_cyan;
+        font-family: $font_space_mono;
+        font-weight: bold;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    &__money-value
+    {
+        padding-right: 3rem;
+        
+        font-size: 50px;
+        font-weight: bold;
+        font-family: $font_space_mono;
+        color: $color_strong_cyan;
+
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+    }
+
+    &__reset-button
+    {
+        text-transform: uppercase;
+        background-color: $color_light_grayish_cyan;
+        color: $color_very_dark_cyan;
+        font-size: 24px;
+        font-family: $font_space_mono;
+        font-weight: bold;
+
+        box-shadow: 0px 0px $color_grayish_cyan;
+        
+        border: none;
+        border-radius: $border-radius-default;
+
+        margin-top: 2rem;
+        height: 3.5rem;
+        width: 80%;
+
+        transition: 0.3s;
+
+        &--unavaliable // Injected via JS when fields are reset.
+        {
+            background-color: $color_light_grayish_cyan_transparent;
+            color: $color_very_dark_cyan_transparent;
+
+            &:hover
+            {
+                // Stuff needs important to override the other hover.
+                cursor: default !important;
+                box-shadow: 0px 0px !important;
+                background-color: $color_light_grayish_cyan_transparent !important;
+            }
+        }
+
+        &:hover
+        {
+            cursor: pointer;
+            background-color: $color_very_light_grayish_cyan;
+            box-shadow: 4px 4px $color_grayish_cyan;
+        }
+    }
+}
+
+@media (max-width: 1000px)
+{
+    .right-container
+    {
+        &__money-value
+        {
+            font-size: 40px;
+        }
+    }
+}
+
+@media (max-width: 750px) 
+{
+    .right-container
+    {
+        width: 100%;
+
+        &__money-value
+        {
+            font-size: 30px;
+            padding-right: 2rem;
+        }
+
+        &__reset-button
+        {
+            height: auto;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &__results
+        {
+            padding: 0;
+            padding-left: 2rem;
+        }
+    }
+}

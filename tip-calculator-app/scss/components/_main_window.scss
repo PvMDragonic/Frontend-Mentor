@@ -1,0 +1,44 @@
+@import '../abstract/variables';
+
+.main-window
+{
+    background-color: $color_white;
+    box-shadow: 4px 4px $color_grayish_cyan;
+
+    display: flex;
+
+    width: 800px;
+    height: 400px;
+
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+@media (max-width: 1000px)
+{
+    .main-window
+    {
+        width: 655px;
+        height: 375px;
+    }
+}
+
+@media (max-width: 750px) 
+{
+    .main-window
+    {
+        width: fit-content;
+        height: fit-content;
+
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 355px)
+{
+    .main-window
+    {
+        width: 100%;
+        border-radius: 0%;
+    }
+}

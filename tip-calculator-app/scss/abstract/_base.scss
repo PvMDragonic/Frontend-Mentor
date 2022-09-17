@@ -1,0 +1,27 @@
+@import './variables';
+
+*:focus
+{
+    outline: none;
+}
+
+body 
+{
+    background-color: $color_light_grayish_cyan;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden
+{
+    display: none;
+}
