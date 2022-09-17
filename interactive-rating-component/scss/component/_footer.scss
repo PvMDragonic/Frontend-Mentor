@@ -1,0 +1,39 @@
+@import '../abstract/variables';
+
+.footer 
+{
+    background-color: $color_orange_transparent;
+    color: $color_white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    text-align: center;
+    transition: 0.5s;
+
+    &__details 
+    { 
+        display: none;
+        font-size: 12px; 
+        text-align: center;
+        transition: 0.5s;
+        padding: 2em;
+    }
+
+    &__anchor 
+    { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+    &:hover > &__details 
+    {
+        display: inline;
+    }
+
+    &:hover 
+    {
+        background-color: $color_orange;
+        height: 5.5em;
+    }
+}
