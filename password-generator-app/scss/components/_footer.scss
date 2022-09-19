@@ -1,0 +1,45 @@
+@import '../abstract/variables';
+
+.footer 
+{
+    background-color: $color_dark_grey_transp;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+    text-align: center;
+    transition: 0.5s;
+    font-family: $font_jet_brains;
+
+    &__title
+    { 
+        color: $color_grey;
+    }
+
+    &__details
+    {
+        color: $color_grey;
+        display: none;
+        font-size: 12px; 
+        text-align: center;
+        padding: 2em;
+        transition: 0.25s;
+    }
+
+    &__anchor 
+    { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+    &:hover > &__details
+    {
+        display: inline;
+    }
+
+    &:hover 
+    {
+        background-color: $color_dark_grey;    
+        height: 5.5em;
+    }
+}

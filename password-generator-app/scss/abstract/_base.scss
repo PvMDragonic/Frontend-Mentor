@@ -1,0 +1,22 @@
+@import './variables';
+
+*:focus
+{
+    outline: none;
+}
+
+body 
+{
+    background-image: linear-gradient($color_light_jet_black, $color_dark_jet_black);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}

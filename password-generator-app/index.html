@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./scss/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./scss/main.css">
+  <title>Frontend Mentor | Password Generator App</title>
+</head>
+
+<body>
+  <main class="main-window">
+    <section class="top-part">
+      <p class="top-part__password-text">PASSWORD</p>
+      <img class="top-part__copy-icon" src="./scss/images/copy-icon.svg" alt="Copy icon">
+    </section>
+
+    <section class="bottom-part">
+      <form action="" class="bottom-part__password-form">
+        <div class="bottom-part__div--char-len">
+          <label for="char-length" class="bottom-part__form-label bottom-part__form-label--slider">Character Length</label>
+          <p class="bottom-part__form-label bottom-part__form-label--slider-value">10</p>
+        </div>
+        <input type="range" min="0" max="20" id="char-length" class="bottom-part__char-length">
+      
+        <div class="bottom-part__div">
+          <input type="checkbox" id="uppercase-checkbox" class="bottom-part__checkbox">
+          <label for="uppercase-checkbox" class="bottom-part__form-label">Include Uppercase Letters</label>
+        </div>
+
+        <div class="bottom-part__div">
+          <input type="checkbox" id="lowercase-checkbox" class="bottom-part__checkbox">
+          <label for="lowercase-checkbox" class="bottom-part__form-label">Include Lowercase Letters</label>
+        </div>
+        
+        <div class="bottom-part__div">
+          <input type="checkbox" id="numbers-checkbox" class="bottom-part__checkbox">
+          <label for="numbers-checkbox" class="bottom-part__form-label">Include Numbers</label>
+        </div>
+
+        <div class="bottom-part__div">
+          <input type="checkbox" id="symbols-checkbox" class="bottom-part__checkbox">
+          <label for="symbols-checkbox" class="bottom-part__form-label">Include Symbols</label>
+        </div>
+
+        <div class="bottom-part__password-stats">
+          <p class="bottom-part__strenght-text bottom-part__strenght-text--label">STRENGHT</p>
+          <div>
+            <p class="bottom-part__strenght-text">MEDIUM</p>
+            <div class="bottom-part__div--span-border">
+              <span class="bottom-part__strenght-level"></span>
+              <span class="bottom-part__strenght-level"></span>
+              <span class="bottom-part__strenght-level"></span>
+              <span class="bottom-part__strenght-level"></span>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="bottom-part__generate-btn">GENERATE</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__title">Password Generator App</p>
+    <p class="footer__details">
+      Challenge by <a class="footer__anchor" href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a class="footer__anchor" href="https://github.com/pvmdragonic">João Pedro Droval</a>.
+    </p>
+  </footer>
+
+  <script src="./node_modules/zxcvbn/dist/zxcvbn.js"></script>
+  <script src="./scripts/generator.js"></script>
+</body>
+</html>

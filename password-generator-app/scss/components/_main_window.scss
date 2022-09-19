@@ -1,0 +1,175 @@
+@import '../abstract/variables';
+
+.main-window
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+    height: 550px;
+}
+
+.top-part
+{
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: $color_dark_grey;
+    margin-bottom: 0.75rem;
+    width: 100%;
+    height: 6rem;
+
+    &__password-text
+    {
+        color: $color_grey;
+        font-family: $font_jet_brains;
+        font-size: 24px;
+        margin: 1.5rem;
+    }
+
+    &__copy-icon
+    {
+        height: 2rem;
+        margin: 1.5rem;
+
+        &:hover
+        {
+            cursor: pointer;
+        }
+    }
+}
+
+.bottom-part
+{
+    background-color: $color_dark_grey;
+    margin-top: 0.75rem;
+    padding: 1.5rem;
+
+    &__div
+    {
+        display: flex;
+        
+        &--char-len
+        {
+            height: 3rem;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        &--span-border
+        {
+            margin-right: 1rem;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__password-form
+    {
+        display: flex;
+        flex-direction: column;
+
+        & div
+        {
+            display: flex;
+        }
+    }
+
+    &__char-length
+    {
+        accent-color: $color_lime;
+        margin-left: 0;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        width: 100%; 
+    }
+
+    &__checkbox
+    {
+        height: 1.5rem;
+        width: 1.5rem;
+
+        margin-bottom: 1rem;
+        
+        accent-color: $color_lime;
+    }
+
+    &__form-label
+    {
+        color: $color_grey;
+        font-family: $font_jet_brains;
+        margin-top: 0.3rem;
+        margin-left: 1rem;
+
+        &--slider
+        {
+            margin-top: 1rem;
+            margin-left: 0.25rem;
+        }
+
+        &--slider-value
+        {
+            color: $color_lime;
+            font-size: 30px;
+        }
+    }
+
+    &__password-stats
+    {
+        background-color: $color_light_jet_black;
+
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+
+        & span
+        {
+            width: 0.5rem;
+            margin: 0.25rem;
+            margin-top: 0.65rem;
+            margin-bottom: 0.65rem;
+            border: 2px solid $color_lime;
+        }
+    }
+
+    &__strenght-text
+    {
+        font-family: $font_jet_brains;
+        color: $color_grey;
+        font-size: 20px;
+
+        margin: 1rem;
+
+        &--label
+        {
+            margin-top: 1.15rem;
+            font-size: 16px;
+            opacity: 0.6;
+        }
+    }
+
+    &__generate-btn
+    {
+        background-color: $color_lime;
+        color: $color_light_jet_black;
+        font-family: $font_jet_brains;
+        font-weight: bold;
+        font-size: 20px;
+
+        border: none;
+        outline: none;
+        
+        width: 100%;
+        height: 4rem;
+        transition: 0.3s;
+
+        &:hover
+        {
+            cursor: pointer;
+            font-size: 22px;
+        }
+    }
+}
