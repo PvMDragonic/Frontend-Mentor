@@ -1,0 +1,57 @@
+// LIGHT MODE
+// Background
+$lm_light_gray: hsl(0, 6%, 82%);
+$lm_grayish_red: hsl(0, 47%, 71%);
+$lm_very_light_gray: hsl(0, 0%, 90%);
+$lm_medium_light_gray: hsl(0, 8%, 70%);
+
+// Keys
+$lm_light_blue: rgba(98,181,189,255);
+$lm_dark_moderate_cyan: hsl(185, 42%, 37%);
+$lm_very_dark_cyan: hsl(185, 58%, 25%);
+$lm_orange: hsl(25, 79%, 54%);
+$lm_dark_orange: rgb(200, 80, 1);
+$lm_very_dark_orange: hsl(25, 99%, 27%);
+$lm_light_grayish_yellow: hsl(45, 7%, 89%);
+$lm_dark_grayish_orange: hsl(35, 11%, 61%);
+
+// Text
+$lm_very_dark_grayish_yellow: hsl(60, 10%, 19%);
+
+// DARK MODE
+// Background
+$dm_dark_blue_1: hsl(222, 26%, 31%);
+$dm_dark_blue_2: hsl(223, 31%, 20%);
+$dm_dark_blue_3: hsl(224, 36%, 15%);
+
+// Keys
+$dm_dark_blue_4: hsl(225, 21%, 49%);
+$dm_dark_blue_5: hsl(224, 28%, 35%);
+$dm_red: hsl(6, 63%, 50%);
+$dm_dark_red: hsl(6, 70%, 34%);
+$dm_light_grayish_orange: hsl(30, 25%, 89%);
+$dm_grayish_orange: hsl(28, 16%, 65%);
+
+// Text
+$dm_dark_greyish_blue: hsl(221, 14%, 31%);
+
+// HIGH CONTRAST MODE
+// Background
+$hcm_very_dark_violet_1: hsl(268, 75%, 9%);
+$hcm_very_dark_violet_2: hsl(268, 71%, 12%);
+
+// Keys
+$hcm_dark_violet: hsl(281, 89%, 26%);
+$hcm_very_dark_violet: hsl(268, 47%, 21%);
+$hcm_vivid_magenta: hsl(285, 91%, 52%);
+$hcm_dark_magenta: hsl(290, 70%, 36%);
+$hcm_pure_cyan: hsl(176, 100%, 44%);
+$hcm_soft_cyan: hsl(177, 92%, 70%);
+
+// Text
+$hcm_light_yellow: hsl(52, 100%, 62%);
+$hcm_very_dark_blue: hsl(198, 20%, 13%);
+
+// GENERIC
+$color_white: hsl(0, 0%, 100%);
+$font_league_spartan: 'League Spartan', sans-serif;

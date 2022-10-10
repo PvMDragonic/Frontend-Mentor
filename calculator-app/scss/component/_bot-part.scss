@@ -1,0 +1,253 @@
+@import '../abstract/variables';
+
+@mixin button($width)
+{
+    font-family: $font_league_spartan;
+    font-size: 24px;
+
+    border: none;
+    border-radius: 7px;
+
+    height: 2.75rem;
+    width: $width;
+
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+
+    &:hover
+    {
+        cursor: pointer;
+    }
+}
+
+@mixin del-res-btn()
+{
+    &--lm
+    {
+        background-color: $lm_dark_moderate_cyan;
+        box-shadow: 0px 3px $lm_very_dark_cyan;
+        color: $color_white;
+
+        &:hover
+        {
+            background-color: $lm_light_blue;
+        }
+
+        &:active
+        {
+            box-shadow: 0px 1.5px $dm_dark_blue_1;
+        }
+    } 
+
+    &--dm
+    {
+        background-color: $dm_dark_blue_4;
+        box-shadow: 0px 3px $dm_dark_blue_1;
+        color: $color_white;
+
+        &:hover
+        {
+            background-color: $lm_light_blue;
+        }
+
+        &:active
+        {
+            box-shadow: 0px 1.5px $dm_dark_blue_1;
+        }
+    } 
+
+    &--hcm
+    {
+        background-color: $hcm_dark_violet;
+        box-shadow: 0px 3px $hcm_vivid_magenta;
+        color: $hcm_pure_cyan;
+
+        &:hover
+        {
+            background-color: $hcm_dark_magenta;
+        }
+
+        &:active
+        {
+            box-shadow: 0px 1.5px $hcm_vivid_magenta;
+        }
+    } 
+}
+
+.bot-part
+{
+    border-radius: 7px;
+    margin-top: 1rem;
+    
+    &--lm
+    {
+        background-color: $lm_light_gray;
+    }
+
+    &--dm
+    {
+        background-color: $dm_dark_blue_2;
+    }
+
+    &--hcm
+    {
+        background-color: $hcm_very_dark_violet_2;
+    }
+
+    &__btn-row
+    {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem;
+        gap: 1rem; // space-between gaps
+    }
+
+    &__regular-btn
+    {
+        @include button(4.75rem);
+
+        &--lm
+        {
+            background-color: $lm_very_light_gray;
+            box-shadow: 0px 3px $lm_grayish_red;
+            color: $lm_very_dark_grayish_yellow;
+
+            &:hover
+            {
+                background-color: $color_white;
+            }
+
+            &:active
+            {
+                box-shadow: 0px 1.5px $lm_grayish_red;
+            }
+        }
+
+        &--dm
+        {
+            background-color: $dm_light_grayish_orange;
+            box-shadow: 0px 3px $dm_grayish_orange;
+            color: $dm_dark_greyish_blue;
+
+            &:hover
+            {
+                background-color: $color_white;
+            }
+
+            &:active
+            {
+                box-shadow: 0px 1.5px $dm_grayish_orange;
+            }
+        }
+
+        &--hcm
+        {
+            background-color: $hcm_very_dark_violet;
+            box-shadow: 0px 3px $hcm_dark_magenta;
+            color: $hcm_light_yellow;
+
+            &:hover
+            {
+                background-color: $hcm_vivid_magenta;
+            }
+
+            &:active
+            {
+                box-shadow: 0px 1.5px $hcm_dark_magenta;
+            }
+        }
+    }
+
+    &__del-btn
+    {
+        @include button(4.75rem);
+        @include del-res-btn();
+    }
+
+    &__reset-btn
+    {
+        @include button(10.5rem);
+        @include del-res-btn();
+    }
+
+    &__result-btn
+    {
+        @include button(10.5rem);
+
+        &--lm
+        {
+            background-color: $lm_dark_orange;
+            color: $color_white;  
+            box-shadow: 0px 3px $lm_very_dark_orange;
+
+            &:hover
+            {
+                background-color: $lm_orange;
+            }
+
+            &:active
+            {
+                box-shadow: 0px 1.5px $lm_very_dark_orange;
+            }
+        }
+
+        &--dm
+        {
+            background-color: $dm_red;
+            color: $color_white;  
+            box-shadow: 0px 3px $dm_dark_red;
+
+            &:hover
+            {
+                background-color: $dm_grayish_orange;
+            }
+
+            &:active
+            {
+                box-shadow: 0px 1.5px $dm_dark_red;
+            }
+        }
+
+        &--hcm
+        {
+            background-color: $hcm_pure_cyan;
+            color: $hcm_very_dark_blue;  
+            box-shadow: 0px 3px $hcm_soft_cyan;
+
+            &:hover
+            {
+                background-color: $hcm_soft_cyan;
+            }
+
+            &:active
+            {
+                box-shadow: 0px 1.5px $hcm_soft_cyan;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px)
+{
+    .bot-part
+    {
+        &__regular-btn
+        {
+            width: 3rem;
+        }
+
+        &__del-btn
+        {
+            width: 3rem;
+        }
+
+        &__reset-btn
+        {
+            width: 7rem;
+        }
+
+        &__result-btn
+        {
+            width: 7rem;
+        }
+    }
+}

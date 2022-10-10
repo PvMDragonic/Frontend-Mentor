@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./scss/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body id="body" class="body--lm">
+  <main class="body__main-window">
+    <section class="top-part">
+      <div class="top-part__header">
+        <h1 class="top-part__text top-part__text--lm">calc</h1>
+
+        <div class="top-part__toggle-div">
+          <p class="top-part__text top-part__text--lm">THEME</p>
+
+          <div class="top-part__switch-toggle top-part__switch-toggle--lm">
+            <input class="top-part__modeBtn" name="state-d" type="radio" checked="checked" />
+            <img src="./images/light-mode-icon.svg" alt="Light mode"/>
+          
+            <input class="top-part__modeBtn" name="state-d" type="radio" />
+            <img src="./images/dark-mode-icon.svg" alt="Dark mode"/>
+          
+            <input class="top-part__modeBtn" name="state-d" type="radio" />
+            <img src="./images/high-contrast-icon.svg" alt="Hight contrast mode"/>
+          </div>
+        </div>
+      </div>
+      <div class="top-part__result-div top-part__result-div--lm">
+        <p class="top-part__result-operation"></p>
+        <div>
+          <p class="top-part__result-text"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bot-part bot-part--lm">
+      <div class="bot-part__btn-row">
+        <button class="bot-part__regular-btn bot-part__regular-btn--lm">7</button>
+        <button class="bot-part__regular-btn bot-part__regular-btn--lm">8</button>
+        <button class="bot-part__regular-btn bot-part__regular-btn--lm">9</button>
+        <button class="bot-part__del-btn  bot-part__del-btn--lm">DEL</button>
+      </div>
+
+      <div class="bot-part__btn-row">
+        <button class="bot-part__regular-btn bot-part__regular-btn--lm">4</button>
+        <button class="bot-part__regular-btn bot-part__regular-btn--lm">5</button>
+        <button class="bot-part__regular-btn bot-part__regular-btn--lm">6</button>
+        <button class="bot-part__regular-btn bot-part__regular-btn--lm">+</button>
+      </div>
+
+      <div class="bot-part__btn-row">
+        <button class="bot-part__regular-btn bot-part__regular-btn--lm">1</button>
+        <button class="bot-part__regular-btn bot-part__regular-btn--lm">2</button>
+        <button class="bot-part__regular-btn bot-part__regular-btn--lm">3</button>
+        <button class="bot-part__regular-btn bot-part__regular-btn--lm">-</button>
+      </div>
+
+      <div class="bot-part__btn-row">
+        <button class="bot-part__regular-btn bot-part__regular-btn--lm">.</button>
+        <button class="bot-part__regular-btn bot-part__regular-btn--lm">0</button>
+        <button class="bot-part__regular-btn bot-part__regular-btn--lm">/</button>
+        <button class="bot-part__regular-btn bot-part__regular-btn--lm">x</button>
+      </div>
+
+      <div class="bot-part__btn-row">
+        <button class="bot-part__reset-btn bot-part__reset-btn--lm">RESET</button>
+        <button class="bot-part__result-btn bot-part__result-btn--lm">=</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer footer--lm">
+    <p class="footer__title footer__title--lm">Password Generator App</p>
+    <p class="footer__details footer__details--lm">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/pvmdragonic">João Pedro Droval</a>.
+    </p>
+  </footer>
+
+  <script src="./scripts/alternateMode.js"></script>
+  <script src="./scripts/calculator.js"></script>
+</body>
+</html>

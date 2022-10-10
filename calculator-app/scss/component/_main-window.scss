@@ -1,0 +1,27 @@
+@import '../abstract/variables';
+
+.body
+{
+    &--lm
+    {
+        background-color: $lm_very_light_gray;
+    }
+
+    &--dm
+    {
+        background-color: $dm_dark_blue_1;
+    }
+
+    &--hcm
+    {
+        background-color: $hcm_very_dark_violet_1;
+    }
+
+    &__main-window
+    {
+        display: flex;
+        flex-direction: column;
+
+        height: 500px;
+    }
+}
